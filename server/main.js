@@ -1,6 +1,9 @@
 const express = require("express");
 const bodyParser = require('body-parser');
+const cors = require("cors");
 let app = express();
+
+app.use(cors())
 
 let user = {
     name : "Levon",
@@ -47,14 +50,10 @@ app.get("/",function(req,res){
 })
 
 app.post("/reg",(req,res)=>{
-    // console.log(req.body);
-    // users.push(req.body)
-    // console.log(req.body.name)
     let message = "";
     function checkRegistredUser(){
         let status = false;
         for(let i in users){
-            // console.log(req.body.name,req.body.name = users[i].name)
             if(req.body.name == users[i].name){
                 status = true;
             }
