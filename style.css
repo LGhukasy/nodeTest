@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.app .formBlock {
+  background-color: slategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  height: 70%;
+  padding: 5px;
+}
+@media screen and (max-width: 768px) {
+  .app .formBlock {
+    width: 80%;
+  }
+}
+.app .formBlock .formRow {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.app .formBlock .formRow .inputWrapper {
+  background-color: #FFFFFF;
+  padding: 10px 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+.app .formBlock .formRow .inputWrapper span {
+  font-size: 1vh;
+  color: slategray;
+}
+.app .formBlock .formRow .inputWrapper input {
+  border: none;
+  outline: none;
+  font-size: 3vh;
+  width: 100%;
+}
+.app .formBlock .formRow .inputWrapper input::placeholder {
+  font-size: 3vh;
+}
+.app .formBlock .formRow .buttonsWrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 100px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .app .formBlock .formRow .buttonsWrapper {
+    padding: 0 15px;
+  }
+}
+.app .formBlock .formRow .buttonsWrapper .acceptButton, .app .formBlock .formRow .buttonsWrapper .cancelButton {
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.app .formBlock .formRow .buttonsWrapper .acceptButton span, .app .formBlock .formRow .buttonsWrapper .cancelButton span {
+  font-size: 2vh;
+  font-weight: bold;
+  color: whitesmoke;
+}
+.app .formBlock .formRow .buttonsWrapper .acceptButton {
+  background-color: springgreen;
+}
+.app .formBlock .formRow .buttonsWrapper .cancelButton {
+  background-color: steelblue;
+}
+
+/*# sourceMappingURL=style.css.map */
